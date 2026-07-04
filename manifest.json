@@ -1,14 +1,19 @@
 {
-  "name": "Lonny Portfolio",
-  "short_name": "LonnyApp",
-  "start_url": "index.html",
+  "name": "Lonny App",
+  "short_name": "Lonny",
+  "start_url": "/project1/",
   "display": "standalone",
   "background_color": "#0f172a",
-  "theme_color": "#38bdf8",
+  "theme_color": "#0f172a",
   "icons": [
     {
-      "src": "motivation.jpg",
+      "src": "icon-192.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
