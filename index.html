@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lonny's Website</title>
 
     <style>
-        body {
-            background-color: #0f172a;
-            color: white;
-            font-family: Arial;
-            text-align: center;
-        }
+       body {
+    background-color: #0f172a;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+}
 
-        h1 {
-            color: #38bdf8;
-        }
+h1 {
+    color: #38bdf8;
+}
 
-        .card {
-            background-color: #1e293b;
-            padding: 20px;
-            margin: 20px auto;
-            width: 300px;
-            border-radius: 10px;
-        }
+/* FIXED CARD */
+.card {
+    background-color: #1e293b;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;         /* 🔥 changed from 300px */
+    max-width: 400px;   /* 🔥 prevents it from getting too big */
+    border-radius: 10px;
+}
 
-        button {
-            padding: 10px 20px;
-            border: none;
-            background-color: #38bdf8;
-            color: black;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+/* FIXED IMAGE */
+img {
+    max-width: 100%;   /* 🔥 responsive image */
+    height: auto;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #38bdf8;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 📱 MOBILE MAGIC */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    button {
+        width: 80%;   /* 🔥 bigger button for phones */
+    }
+} 
     </style>
 </head>
 
@@ -39,7 +69,7 @@
     <h1>🔥 Welcome to Lonny's Website 🔥</h1>
     <p>I am learning Web Development 🚀</p>
 
-<img src="motivation.jpg" width="250">
+<img src="motivation.jpg">
 
     <div class="card">
         <h2>About Me</h2>
