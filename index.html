@@ -12,18 +12,21 @@
         font-family: Arial, sans-serif;
         background-color: #0f172a;
         color: white;
+        text-align: center;
     }
 
-    /* NAVBAR */
+    h1 {
+        color: #38bdf8;
+    }
+
     nav {
         background-color: #1e293b;
         padding: 15px;
-        text-align: center;
     }
 
     nav a {
         color: #38bdf8;
-        margin: 0 15px;
+        margin: 0 10px;
         text-decoration: none;
         font-weight: bold;
     }
@@ -32,24 +35,11 @@
         color: white;
     }
 
-    /* HERO SECTION */
-    .hero {
-        text-align: center;
-        padding: 30px;
-    }
-
-    h1 {
-        color: #38bdf8;
-    }
-
-    /* IMAGE */
     img {
         max-width: 150px;
         border-radius: 50%;
-        margin-top: 10px;
     }
 
-    /* CARDS */
     .card {
         background-color: #1e293b;
         padding: 20px;
@@ -59,7 +49,12 @@
         border-radius: 10px;
     }
 
-    /* BUTTON */
+    .card p {
+        background: #0f172a;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
     button {
         padding: 10px 20px;
         border: none;
@@ -73,14 +68,9 @@
         background-color: white;
     }
 
-    /* MOBILE */
     @media (max-width: 600px) {
         h1 {
             font-size: 22px;
-        }
-
-        p {
-            font-size: 16px;
         }
     }
 </style>
@@ -94,16 +84,14 @@
 <!-- NAVBAR -->
 <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
+    <a href="#">Projects</a>
     <a href="#">Contact</a>
 </nav>
 
 <!-- HERO -->
-<div class="hero">
-    <h1>🔥 Lonny Portfolio 🔥</h1>
-    <p>Upcoming Software Developer 💻</p>
-    <img src="motivation.jpg">
-</div>
+<h1>🔥 Lonny Portfolio 🔥</h1>
+<p>Upcoming Software Developer 💻</p>
+<img src="motivation.jpg">
 
 <!-- ABOUT -->
 <div class="card">
@@ -117,6 +105,15 @@
     <p>To become a professional software developer and build impactful solutions.</p>
 </div>
 
+<!-- PROJECTS -->
+<div class="card">
+    <h2>My Projects</h2>
+
+    <p>🧮 <a href="calculator.html" style="color:#38bdf8;">Calculator App</a></p>
+    <p>📋 To-Do List (Coming Soon)</p>
+    <p>🌐 Portfolio Website (Live)</p>
+</div>
+
 <!-- CONTACT -->
 <div class="card">
     <h2>Contact Me</h2>
@@ -125,9 +122,7 @@
 </div>
 
 <!-- BUTTON -->
-<div style="text-align:center; margin:20px;">
-    <button onclick="showMessage()">Motivate Me</button>
-</div>
+<button onclick="showMessage()">Motivate Me</button>
 
 <script>
     function showMessage() {
