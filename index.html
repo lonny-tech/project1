@@ -1,93 +1,140 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lonny's Website</title>
+    <title>Lonny Portfolio</title>
 
-    <style>
-       body {
-    background-color: #0f172a;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-    margin: 0;
-}
-
-h1 {
-    color: #38bdf8;
-}
-
-/* FIXED CARD */
-.card {
-    background-color: #1e293b;
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;         /* 🔥 changed from 300px */
-    max-width: 400px;   /* 🔥 prevents it from getting too big */
-    border-radius: 10px;
-}
-
-/* FIXED IMAGE */
-img {
-    max-width: 100%;   /* 🔥 responsive image */
-    height: auto;
-}
-
-/* BUTTON */
-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #38bdf8;
-    color: black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* 📱 MOBILE MAGIC */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 22px;
+```
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0f172a;
+        color: white;
     }
 
-    p {
-        font-size: 16px;
-    }
-
-    .card {
+    /* NAVBAR */
+    nav {
+        background-color: #1e293b;
         padding: 15px;
+        text-align: center;
     }
 
-    button {
-        width: 80%;   /* 🔥 bigger button for phones */
+    nav a {
+        color: #38bdf8;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
     }
-} 
-    </style>
+
+    nav a:hover {
+        color: white;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        text-align: center;
+        padding: 30px;
+    }
+
+    h1 {
+        color: #38bdf8;
+    }
+
+    /* IMAGE */
+    img {
+        max-width: 150px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+
+    /* CARDS */
+    .card {
+        background-color: #1e293b;
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 400px;
+        border-radius: 10px;
+    }
+
+    /* BUTTON */
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #38bdf8;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: white;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+</style>
+```
+
 </head>
 
 <body>
 
-    <h1>🔥 Welcome to Lonny's Website 🔥</h1>
-    <p>I am learning Web Development 🚀</p>
+```
+<!-- NAVBAR -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
 
-<img src="motivation.jpg">
+<!-- HERO -->
+<div class="hero">
+    <h1>🔥 Lonny Portfolio 🔥</h1>
+    <p>Upcoming Software Developer 💻</p>
+    <img src="motivation.jpg">
+</div>
 
-    <div class="card">
-        <h2>About Me</h2>
-        <p>I am Lonny, an ICT student learning coding.</p>
-    </div>
+<!-- ABOUT -->
+<div class="card">
+    <h2>About Me</h2>
+    <p>I am Lonny, an ICT student passionate about coding and technology.</p>
+</div>
 
-    <div class="card">
-        <h2>My Goal</h2>
-        <p>To become a professional software developer 💻</p>
-    </div>
+<!-- GOALS -->
+<div class="card">
+    <h2>My Goal</h2>
+    <p>To become a professional software developer and build impactful solutions.</p>
+</div>
 
-    <button onclick="showMessage()">Click Me</button>
+<!-- CONTACT -->
+<div class="card">
+    <h2>Contact Me</h2>
+    <p>Email: youremail@example.com</p>
+    <p>Location: Kenya</p>
+</div>
 
-    <script>
-        function showMessage() {
-            alert("You are doing great Lonny 😎🔥");
-        }
-    </script>
+<!-- BUTTON -->
+<div style="text-align:center; margin:20px;">
+    <button onclick="showMessage()">Motivate Me</button>
+</div>
+
+<script>
+    function showMessage() {
+        alert("Keep going Lonny 😎🔥 You are building your future!");
+    }
+</script>
+```
 
 </body>
 </html>
